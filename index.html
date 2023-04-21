@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/components/style.css">
+    <title>Dictionary App</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header__container">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="38" viewBox="0 0 34 38">
+                    <g fill="none" fill-rule="evenodd" stroke="#838383" stroke-linecap="round" stroke-width="1.5">
+                        <path d="M1 33V5a4 4 0 0 1 4-4h26.8A1.2 1.2 0 0 1 33 2.2v26.228M5 29h28M5 37h28" />
+                        <path stroke-linejoin="round" d="M5 37a4 4 0 1 1 0-8" />
+                        <path d="M11 9h12" />
+                    </g>
+                </svg>
+            </a>
+            <nav class="header__itens">
+                <div class="header__fonts-container">
+                    <div class="fonts__title" id="font">
+                        Serif<svg id="seta" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+                            <path fill="none" stroke="#A445ED" stroke-width="1.5" d="m1 1 6 6 6-6" />
+                        </svg>
+                        <div class="header__fonts">
+                            <div class="header__fonts-item" id="sans-serif">
+                                Sans Serif
+                            </div>
+                            <div class="header__fonts-item" id="serif">
+                                Serif
+                            </div>
+                            <div class="header__fonts-item" id="monospace">
+                                Monospace
+                            </div> 
+                    </div>
+                </div>
+                    </div>
+                    
+
+                <div class="header__darkmode">
+                    <div class="form-check form-switch d-flex align-items-center">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+                            <path fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
+                                d="M1 10.449a10.544 10.544 0 0 0 19.993 4.686C11.544 15.135 6.858 10.448 6.858 1A10.545 10.545 0 0 0 1 10.449Z" />
+                        </svg>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="search__container">
+                    <input class="input-search" type="text" id="search" placeholder="Insert a word here">
+                    <p class="invalid"></p>
+            </div>
+
+            <div class="title__container">
+                <div class="title">
+                    <h1 id="word">Keyboard</h1>
+                    <p id="phonetic">/ˈkiːbɔːd/</p>
+                </div>
+
+                <svg id="play" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+                    <g fill="#A445ED" fill-rule="evenodd">
+                        <circle cx="37.5" cy="37.5" r="37.5" opacity=".25" />
+                        <path d="M29 27v21l21-10.5z" />
+                    </g>
+                </svg>
+                <audio id="audio" src="https://api.dictionaryapi.dev/media/pronunciations/en/keyboard-us.mp3"></audio>
+            </div>
+        </section>
+
+        <section>
+            <div class="noun">
+                <span>noun</span>
+                <div class="traco"></div>
+            </div>
+
+            <div class="meaning" id="meaning">
+                <ul class="meaning__infos" id="meaning__infos">
+                    <span class="span__title"> Meaning</span>
+                <!-- <li class="meaning__infos-itens"> A (generally human) male who begets a child.</li>
+                <li class="meaning__infos-itens"> A male ancestor more remote than a parent; a progenitor; especially, a first ancestor.</li>
+                <li class="meaning__infos-itens">A term of respectful address for an elderly man.</li> -->
+                <li class="meaning__infos-itens">(etc.) A set of keys used to operate a typewriter, computer etc.</li>
+                <!-- <p class="meaning__infos-example"></p> -->
+                <li class="meaning__infos-itens">A component of many instruments including the piano, organ, and harpsichord consisting of usually black and white keys that cause different tones to be produced when struck.</li>
+                <li class="meaning__infos-itens">A device with keys of a musical keyboard, used to control electronic sound-producing devices which may be built into or separate from the keyboard device.</li>
+                
+                </ul>
+                <div class="synonyms">
+                    <span class="span__title">Synonyms</span>
+                    <div class="synonyms-item" id="synonyms"><span>electronic keyboard</span></div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section>
+            <div class="noun">
+                <span>verb</span>
+                <div class="traco"></div>
+            </div>
+
+            <div class="meaning">
+                <ul class="meaning__infos" id="meaning-verb">
+                    <span class="span__title"> Meaning</span>
+                    <li class="meaning__infos-itens">To type on a computer keyboard.</li>
+                    <!-- <p class="meaning__infos-itens"> Keyboarding is the part of this job I hate the most.</p> -->
+                </ul>
+                <div class="synonyms">
+                    <span class="span__title">Synonyms</span>
+                    <p class="synonyms-item" id="synonyms-verbs"><span></span></p>
+                </div>
+
+                <div class="border"></div>
+            </div>
+
+        </section>
+
+        <section>
+            <div class="meaning">
+                <span class="span__title"> Source </span>
+                <a class="link" href="https://en.wiktionary.org.wiki/keyboard" id="link">https://en.wiktionary.org.wiki/keyboard
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                        <path fill="none" stroke="#838383" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="1.5"
+                            d="M6.09 3.545H2.456A1.455 1.455 0 0 0 1 5v6.545A1.455 1.455 0 0 0 2.455 13H9a1.455 1.455 0 0 0 1.455-1.455V7.91m-5.091.727 7.272-7.272m0 0H9m3.636 0V5" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <script src="script/main.js"></script>
+    <script src="script/audio.js"></script>
+    <script src="script/fonts.js"></script>
+    <script src="script/darkMode.js"></script>
+</body>
+
+</html>

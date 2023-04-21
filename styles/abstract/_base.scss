@@ -1,0 +1,26 @@
+@import './_variaves.scss';
+
+html, body{
+    background-color: rgb(255, 255, 255);
+    font-family: $fonte-lora;
+}
+
+dl, ol, ul, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li{
+    list-style: none;
+}
+li::before{
+    
+     /* Unicode for a bullet */
+content: "\2022";
+
+/* Styles for Indentation*/
+color: $cor-roxa;
+display: inline-block;
+width: 1em;
+margin-left: -1em;
+}

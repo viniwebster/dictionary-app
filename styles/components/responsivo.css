@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Inter:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@media screen and (max-width: 428px) {
+  .title__container .title h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+  }
+}/*# sourceMappingURL=responsivo.css.map */
