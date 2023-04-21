@@ -7,6 +7,7 @@ btnAudio.addEventListener('click', ()=>{
 
 
 function adicionaAudio(sound) {  
+   audioHtml.src = "";
    
    let find = sound.find(e => e.audio);
    audioHtml.src = find.audio;

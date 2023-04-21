@@ -16,7 +16,7 @@ input.addEventListener('keydown', (e)=>{
 
             meaningVerb.innerHTML =  "";
             sinonimosVerb.innerHTML = "";     
-            audioHtml.src = "";
+            
     }
 })
 
