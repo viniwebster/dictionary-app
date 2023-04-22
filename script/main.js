@@ -113,6 +113,7 @@ function adicionaVerb(definitions, synonyms) {
 
 function adicionaLink(word) {
     const link = document.getElementById('link');
-    link.textContent = `https://en.wiktionary.org.wiki/${word}`
+    link.textContent = `https://en.wiktionary.org/wiki/${word}`
+    link.href = `https://en.wiktionary.org/wiki/${word}`;
 }
  
