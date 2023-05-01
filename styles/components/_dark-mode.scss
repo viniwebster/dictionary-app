@@ -2,10 +2,6 @@
 
 .dark{
     background-color: $cor-background-escura;
-    transition-timing-function:ease;
-    transition-duration: .1s;
-    transition-delay: .1s;
-
     .header__container{
         color: $cor-fonte-clara;
         .header__fonts-container{

@@ -97,6 +97,7 @@ li::before {
 
 body {
   overflow-x: hidden;
+  transition: 1s;
 }
 
 .search__container {
@@ -249,9 +250,6 @@ body {
 
 .dark {
   background-color: black;
-  transition-timing-function: ease;
-  transition-duration: 0.1s;
-  transition-delay: 0.1s;
 }
 .dark .header__container {
   color: white;
